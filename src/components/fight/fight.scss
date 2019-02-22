@@ -1,0 +1,22 @@
+.fight {
+  width: 100%;
+  line-height: auto;
+  font-variant: small-caps;
+  background-color: rgba(207, 207, 228, 0.6);
+  border-radius: 1rem;
+  padding: 1vh 1vw 2vh;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .versus {
+    margin: 3vh 0 1vh;
+    font-size: large;
+    color: black;
+  }
+
+  .versus:hover,
+  .name:hover {
+    filter: invert(20%);
+    text-shadow: none;
+  }
+}

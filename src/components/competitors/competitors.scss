@@ -1,0 +1,25 @@
+.competitors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    list-style: none;
+    color: white;
+
+    button {
+        cursor: pointer;
+        margin: 0 0 1%;
+        height: 3rem;
+        padding: 1rem;
+        box-shadow: 2px 2px 2px 1px #777;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &.active {
+            background-color: green;
+            color: white;
+        }
+    }
+}

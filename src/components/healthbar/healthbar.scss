@@ -1,0 +1,39 @@
+$lg: green;
+$md: darkorange;
+$sm: orange;
+$xs: red;
+
+.healthbar {
+  border: 0;
+  height: 2.5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  .percent {
+    height: 100%;
+    -webkit-transition: width 2s;
+    transition: width 2s, background-color 1s;
+
+    &[data-state="lg"] {
+      background-color: $lg;
+    }
+
+    &[data-state="md"] {
+      background-color: $md;
+    }
+
+    &[data-state="sm"] {
+      background-color: $sm;
+    }
+
+    &[data-state="xs"] {
+      background-color: $xs;
+    }
+  }
+}
